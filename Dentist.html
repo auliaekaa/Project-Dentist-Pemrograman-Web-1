@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Byclinic - Klinik Gigi Medis</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo"><i class="fas fa-tooth"></i> Byclinic</div>
+        <ul class="nav-menu">
+          <li>
+            <a href="#" class="nav-link active" onclick="showPage('home')"
+              >Beranda</a
+            >
+          </li>
+          <li>
+            <a href="#" class="nav-link" onclick="showPage('services')"
+              >Layanan</a
+            >
+          </li>
+          <li>
+            <a href="#" class="nav-link" onclick="showPage('about')">Tentang</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link" onclick="showPage('team')"
+              >Tim Dokter</a
+            >
+          </li>
+          <li>
+            <a href="#" class="nav-link" onclick="showPage('testimonials')"
+              >Testimoni</a
+            >
+          </li>
+          <li>
+            <a href="#" class="nav-link" onclick="showPage('contact')"
+              >Kontak</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Senyum Sehat Dimulai Dari Sini</h1>
+          <p>
+            Klinik gigi dengan teknologi terdepan dan pelayanan terbaik untuk
+            kesehatan gigi dan mulut Anda
+          </p>
+          <a href="#" class="cta-button" onclick="showPage('contact')"
+            >Buat Janji Sekarang</a
+          >
+        </div>
+      </section>
+
+      <section class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-tooth"></i>
+          </div>
+          <h3>Perawatan Umum</h3>
+          <p>
+            Pemeriksaan rutin, pembersihan karang gigi, dan perawatan dasar
+            untuk menjaga kesehatan gigi Anda
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-smile"></i>
+          </div>
+          <h3>Ortodonti</h3>
+          <p>
+            Pemasangan behel dan perawatan untuk memperbaiki susunan gigi yang
+            tidak rata
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-magic"></i>
+          </div>
+          <h3>Kosmetik Gigi</h3>
+          <p>
+            Pemutihan gigi, veneer, dan berbagai perawatan untuk mempercantik
+            senyuman Anda
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Services Page -->
+    <div id="services" class="page">
+      <section class="services-section">
+        <video autoplay muted loop playsinline class="bg-video">
+          <source src="Dentist Ad Video.mp4" type="video/mp4" />
+        </video>
+
+        <div class="services-content">
+          <h2>Layanan Kami</h2>
+          <p>Solusi lengkap untuk kesehatan dan kecantikan gigi Anda</p>
+        </div>
+      </section>
+
+      <section class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-stethoscope"></i>
+          </div>
+          <h3>Pemeriksaan Rutin</h3>
+          <p>
+            Pemeriksaan menyeluruh untuk deteksi dini masalah gigi dan mulut.
+            Dilakukan oleh dokter berpengalaman dengan teknologi modern.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-tooth"></i>
+          </div>
+          <h3>Scaling & Polishing</h3>
+          <p>
+            Pembersihan karang gigi profesional untuk menjaga kebersihan dan
+            kesehatan gusi Anda.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-fill-drip"></i>
+          </div>
+          <h3>Tambal Gigi</h3>
+          <p>
+            Penambalan gigi berlubang dengan bahan berkualitas tinggi yang tahan
+            lama dan estetis.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-crown"></i>
+          </div>
+          <h3>Crown & Bridge</h3>
+          <p>
+            Pemasangan mahkota gigi dan jembatan untuk mengganti gigi yang rusak
+            atau hilang.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h3>Cabut Gigi</h3>
+          <p>
+            Pencabutan gigi dengan teknik modern yang minim rasa sakit dan cepat
+            penyembuhan.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-seedling"></i>
+          </div>
+          <h3>Implan Gigi</h3>
+          <p>
+            Pemasangan implan gigi untuk mengganti gigi yang hilang dengan hasil
+            yang natural.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- About Page -->
+    <div id="about" class="page">
+      <section class="page-header">
+        <h1>Tentang Byclinic</h1>
+        <p>Mengenal lebih dekat klinik gigi terpercaya Anda</p>
+      </section>
+
+      <section class="about-content">
+        <div class="about-text">
+          <h2>Pengalaman 15+ Tahun</h2>
+          <p>
+            Byclinic telah melayani ribuan pasien dengan dedikasi tinggi dalam
+            memberikan perawatan gigi terbaik. Kami menggunakan teknologi
+            terkini dan metode perawatan yang telah terbukti efektif.
+          </p>
+          <p>
+            Tim dokter kami terdiri dari spesialis berpengalaman yang selalu
+            mengutamakan kenyamanan dan kepuasan pasien. Setiap perawatan
+            dilakukan dengan standar internasional.
+          </p>
+          <p>
+            Fasilitas klinik yang modern dan steril menciptakan lingkungan yang
+            aman dan nyaman untuk setiap kunjungan Anda.
+          </p>
+        </div>
+        <div class="about-image">
+          <img src="gigibenner.jpg" alt="Modern Dental Clinic" />
+        </div>
+      </section>
+    </div>
+
+    <!-- Team Page -->
+    <div id="team" class="page">
+      <section class="page-header">
+        <h1>Tim Dokter</h1>
+        <p>Bertemu dengan para ahli yang akan merawat senyuman Anda</p>
+      </section>
+
+      <section class="team-grid">
+        <div class="team-card">
+          <img src="dokter 1.jpg" alt="Dr. Mawar Ayu" />
+          <div class="team-info">
+            <h3>Dr. Mawar Ayu</h3>
+            <p>Dokter Gigi Umum</p>
+            <p>
+              Berpengalaman lebih dari 10 tahun dalam perawatan gigi umum dan
+              kosmetik.
+            </p>
+          </div>
+        </div>
+        <div class="team-card">
+          <img src="dokter 2.webp" alt="Dr. Dewi Putri" />
+          <div class="team-info">
+            <h3>Dr. Dewi Putri</h3>
+            <p>Spesialis Ortodonti</p>
+            <p>Ahli dalam perawatan kawat gigi dan perbaikan susunan gigi.</p>
+          </div>
+        </div>
+        <div class="team-card">
+          <img src="dokter 3.jpg" alt="Dr. Budi Santoso" />
+          <div class="team-info">
+            <h3>Dr. Budi Santoso</h3>
+            <p>Spesialis Bedah Mulut</p>
+            <p>Berpengalaman dalam pencabutan gigi kompleks dan implan gigi.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Testimonials Page -->
+    <div id="testimonials" class="page">
+      <section class="page-header">
+        <h1>Testimoni Pasien</h1>
+        <p>Pengalaman nyata dari pasien kami</p>
+      </section>
+
+      <section class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-user"></i>
+          </div>
+          <h3>Rina Sari</h3>
+          <p>
+            "Perawatan di Byclinic sangat memuaskan. Dokter ramah dan
+            fasilitasnya modern. Gigi saya yang berlubang berhasil ditambal
+            dengan rapi."
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-user"></i>
+          </div>
+          <h3>Budi Pratama</h3>
+          <p>
+            "Saya melakukan pemasangan behel di sini. Prosesnya tidak sakit dan
+            hasilnya sangat memuaskan. Senyuman saya sekarang lebih percaya
+            diri."
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-user"></i>
+          </div>
+          <h3>Dewi Lestari</h3>
+          <p>
+            "Scaling gigi rutin saya selalu dilakukan di Byclinic. Teknisi dan
+            dokter sangat profesional. Kliniknya juga bersih dan nyaman."
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact" class="page">
+      <section class="page-header">
+        <h1>Hubungi Kami</h1>
+        <p>Buat janji konsultasi atau tanyakan informasi lebih lanjut</p>
+      </section>
+
+      <section class="contact-content">
+        <form class="contact-form" onsubmit="submitForm(event)">
+          <div class="form-group">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Nomor Telepon</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="alamat">Alamat</label>
+            <input type="text" id="alamat" name="alamat" required />
+          </div>
+          <div class="form-group">
+            <label for="service">Layanan yang Diinginkan</label>
+            <select id="service" name="service">
+              <option>Pilih Layanan</option>
+              <option>Konsultasi Umum</option>
+              <option>Scaling & Polishing</option>
+              <option>Tambal Gigi</option>
+              <option>Ortodonti (Behel)</option>
+              <option>Pemutihan Gigi</option>
+              <option>Implan Gigi</option>
+              <option>Cabut Gigi</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Pesan/Keluhan</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Ceritakan keluhan atau pertanyaan Anda..."
+            ></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Kirim Pesan</button>
+        </form>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Byclinic</h3>
+          <p>
+            Klinik gigi modern dengan pelayanan terbaik untuk kesehatan gigi dan
+            mulut Anda.
+          </p>
+          <div class="social-links">
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/blubbuyy?igsh=MMQxMTBnbjBrcjZnaq=="
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://wa.me/6285780747599">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Kontak</h3>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> Jl. Kesehatan Permata Indah
+            No. 88, Serang Banten
+          </p>
+          <p><i class="fas fa-phone"></i>085780747599</p>
+          <p><i class="fas fa-envelope"></i> info@byclinic.com</p>
+        </div>
+        <div class="footer-section">
+          <h3>Jam Operasional</h3>
+          <p>Senin - Jumat: 09:00 - 20:00</p>
+          <p>Sabtu: 09:00 - 18:00</p>
+          <p>Minggu: 09:00 - 15:00</p>
+        </div>
+      </div>
+      <div>
+        <p>&copy; 2025 Byclinic.</p>
+      </div>
+    </footer>
+
+    <script src="tema.js"></script>
+  </body>
+</html>
